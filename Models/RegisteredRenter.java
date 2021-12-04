@@ -2,8 +2,11 @@
 //RegisteredRenter.java
 //
 package Models;
-import interfaces*;
+import interfaces.*;
 
-public class RegisteredRenter implements Subscripton extends Renter{
+public class RegisteredRenter extends Renter implements Subscripton{
+    public void notify(String newListing){
+
+    }
     
 }

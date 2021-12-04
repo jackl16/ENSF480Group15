@@ -14,6 +14,13 @@ import java.awt.*;
 
 public class Application extends JPanel{
 
+    private Login login;
+    private Object controller;
+    public Component[] t;
+
+    public void paintComponent(Graphics g){
+        
+    }
 
 
     public static void main(String args[]){
