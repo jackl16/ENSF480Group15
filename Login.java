@@ -3,7 +3,7 @@
 public class Login{
     private LoginView view;
 
-    public bpol login(String username, String password){
-
+    public Boolean login(String username, String password){
+        return true;
     }
 }
