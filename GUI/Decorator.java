@@ -3,7 +3,7 @@
 package GUI;
 
 
-public abstract class Decorator implements Component{
+public abstract class Decorator implements aComponent{
     protected Component cmp;
     protected int x;
     protected int y;
@@ -17,5 +17,7 @@ public abstract class Decorator implements Component{
         this.width=width;
         this.height=height;
     }
+
+    public abstract void draw(Graphics g);
 
 }

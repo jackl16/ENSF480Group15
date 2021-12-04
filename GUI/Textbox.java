@@ -3,7 +3,7 @@
 package GUI;
 
 
-public class Textbox implements Component{
+public class Textbox implements aComponent{
     protected int x;
     protected int y;
     protected String text;
