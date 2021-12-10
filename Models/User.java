@@ -1,13 +1,8 @@
-
-//User.java
-//
-
 package Models;
 
-public abstract class User{
-    protected Property properties[];
-    protected String username;
+import java.util.ArrayList;
 
-
-    
+public abstract class User {
+    ArrayList<Property> properties;
+    String username;
 }

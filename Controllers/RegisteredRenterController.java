@@ -1,20 +1,38 @@
-//RegisteredRenterController.java
 package Controllers;
 
-public class RegisteredRenterController extends RenterController implements Subject{
-    private ReigisteredRenter model;
-    private RenterView view;
+import GUI.Button;
+import GUI.ButtonObserver;
+import Main.Application;
+import Models.RegisteredRenter;
+import Views.RegisteredRenterView;
 
-    public void subscribe(String type, int numBedrooms, int numBathrooms, Boolean furnished, String quadrant){
+public class RegisteredRenterController extends RenterController implements ButtonObserver {
+    private RegisteredRenter model;
+    private RegisteredRenterView view;
+
+
+    public RegisteredRenterController() {
+        this.model = new RegisteredRenter();
+
+        this.view = new RegisteredRenterView(this);
+        Application.mainPanel.add(this.view, "registeredrenter");
+    }
+
+    public void subscribe(String type, int numBedrooms, int numBathrooms, Boolean furnished, String quadrant) {
 
     }
 
-    public void notify(String newListing){
+    public void buttonPressed(String text) {
+        if (text.compareTo(logout.getButtonText()) == 0) {
+            Application.cardLayout.show(Application.mainPanel, "login");
+        }
+    }
+
+    public void notify(String newListing) {
 
     }
 
-    public void unsubscribe(){
-        
+    public void unsubscribe() {
+
     }
-    
-} 
+}
